@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap'); 
+@import "tailwindcss"; 
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+}
+
+
+$font-text-color: #1E1B18;
+$font-title-color: #0A2463;
+$font-subtitle-color: #3E92CC;
+$background-color: #FFFAFF;
+
+@mixin font-subtitle {
+  margin: 24px;
+  color: $font-subtitle-color;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@mixin font-title {
+  margin: 24px;
+  color: $font-title-color;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+@mixin font-text {
+  margin: 24px;
+  color: $font-text-color;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+body {
+  background-color: $background-color;
+  color: $font-text-color;
+  font-family: "Funnel Display", sans-serif;
+}
