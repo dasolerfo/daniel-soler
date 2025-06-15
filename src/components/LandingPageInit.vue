@@ -3,8 +3,8 @@
       <!-- Side panel -->
       <div  class="w-1/3  text-white p-5 flex flex-col justify-center">
         <Transition name="fade-up">
-        <div v-if="true" class="flex flex-col space-y-4 m-10 justify-center">
-          <h1 class="text-7xl font-bold mb-4">Dani Soler</h1>
+        <div v-if="show" class="flex flex-col space-y-4 m-10 justify-center">
+          <h1 class="text-7xl font-bold mb-4">Daniel Soler</h1>
           <h2 class="text-3xl font-bold mb-4">Desenvolupador Fullstack</h2>
           <h2 class="text-3xl font-bold mb-4">Enginyer informàtic</h2>
           <p class="text-gray-400 mb-6 text-xl mt-5">
@@ -31,10 +31,10 @@
             class="object-cover w-full h-full bg-position-bottom object-bottom"
           />
           <div class="absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-black to-transparent"></div>
+          <div class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black to-transparent"></div>
         </div>
   
       </div>
-      <div class="absolute inset-y-0  w-1/3 bg-gradient-to-r from-black to-transparent"></div>
 
     </div>
   </template>
@@ -43,7 +43,7 @@
   .fade-up-enter-active,
   .fade-up-leave-active {
     transition: all 1s ease;
-    animation-delay: 2s;
+    transition-delay: 0.5s;
   }
   .fade-up-enter-from {
     opacity: 0;
@@ -55,31 +55,19 @@
   }
   </style>
   
-  <script setup>
-  const letters = [
-    'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
-    'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
-    'V', 'W', 'X', 'Y', 'Z', 'Æ', 'Ø', 'Å'
-  ]
-  
-  const names = [
-    'LORENZO & CHARLO',
-    'LUCA STEREO',
-    'MADS LANGER',
-    'MALTE ALBERT',
-    'MARIE KEY',
-    'MARTIN JENSEN'
-  ]
-  
-  // Posicions fictícies, pots ajustar-les amb Tailwind utilitzant top-x/left-x/right-x/bottom-x
-  const positions = [
-    'top-10 left-10',
-    'top-24 left-16',
-    'top-36 left-16',
-    'top-56 left-16',
-    'bottom-32 left-16',
-    'bottom-10 left-16'
-  ]
+  <script >
+
+
+
+export default {
+    name: 'LandingPageInit',
+    data (){
+        return {show: false} 
+    },
+    mounted (){
+        this.show = true;
+    }
+}
   </script>
   
   <style scoped>
