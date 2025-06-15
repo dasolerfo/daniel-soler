@@ -3,8 +3,9 @@
   <SideBar @toggle-menu="aplicaFilter"></SideBar>
   <div :class="menuActive ?  'blancinegre' : 'totColor'">
   <LandingPageInit></LandingPageInit>
-  </div>
-  <h1>Qualsevol marranada on me la posa</h1>
+  
+  <QuiSocComponent></QuiSocComponent>
+</div>
 </div>
 
 </template>
@@ -12,6 +13,7 @@
 <script> 
   import LandingPageInit from './components/LandingPageInit.vue';
 import SideBar from './components/SideBar.vue';
+import QuiSocComponent from './components/QuiSocComponent.vue';
 
   export default {
     data() {
@@ -28,7 +30,8 @@ import SideBar from './components/SideBar.vue';
       },
       components: {
         LandingPageInit,
-        SideBar
+        SideBar,
+        QuiSocComponent
       }
   }
   
