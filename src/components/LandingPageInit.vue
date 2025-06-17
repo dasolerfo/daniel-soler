@@ -9,14 +9,22 @@
           <h2 class="text-3xl font-bold mb-4">Enginyer informàtic</h2>
           <p class="text-gray-400 mb-6 text-xl mt-5">
             <span class="text-white">Desenvolupador Fullstack</span> amb experiència en llenguatges com
-            <span class="text-cyan-400">Go</span> i <span class="text-red-400">PHP Laravel</span> per el desenvolupament d'aplicacions backend,
-            <span class="text-green-400">Vue.js</span> i <span class="text-cyan-500">React</span> per el frontend d'aplicacions web, amb experiencia amb 
-            diferents entorns de bases de dades com <span class="text-white">PostGreSQL</span> o <span class="text-yellow-100">MySQL</span>
+            <strong class="text-cyan-400">Go</strong> i <strong class="text-red-400">PHP Laravel</strong> per el desenvolupament d'aplicacions backend,
+            <strong class="text-green-400">Vue.js</strong> i <strong class="text-cyan-500">React</strong> per el frontend d'aplicacions web, amb experiencia amb 
+            diferents entorns de bases de dades com <strong class="text-white">PostGreSQL</strong> o <strong class="text-yellow-100">MySQL</strong>
             </p>
-            <p class="text-gray-400 mb-6 text-xl ">Apassionat de la tecnologia i la programació, sempre busco
-            millorar les meves habilitats i aprendre noves tecnologies. Si estàs interessat en col·laborar o simplement vols xerrar sobre  tecnologia,
-            no dubtis a contactar-me!
-          </p>
+            <div class="flex space-x-4 mt-5">
+            <a href="https://github.com/danielsoler" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/github-mark/github-mark-white.svg" alt="GitHub" class="w-10 h-10">
+            </a>
+            <a href="https://www.linkedin.com/in/danielsoler/" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/linkedin.svg" alt="LinkedIn" class="w-10 h-10 filter invert">
+            </a>
+            <a href="https://www.instagram.com/danielsoler/" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/instagram-white-icon.svg" alt="Instagram" class="w-10 h-10">
+            </a>
+           
+            </div>
         </div>
       </Transition>
       </div>
