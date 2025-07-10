@@ -2,26 +2,26 @@
     <div class="p-5 h-screen mt-20">
       <h2
         v-intersect
-        class="relative text-7xl font-bold mb-4 text-white text-right mr-40 opacity-0 translate-y-10 transition duration-700 ease-out"
+        class="relative text-7xl font-bold mb-4 text-white text-right mr-40 opacity-0 translate-y-10 transition duration-700 ease-out pt-5"
       >
         Una mica sobre mi
       </h2>
   
-      <div class="flex pl-15 pr-15">
+      <div class="flex pl-8 pr-15">
         <div
           v-intersect
           class="w-1/3 relative overflow-hidden bg-position-bottom opacity-0 translate-y-10 transition duration-700 ease-out delay-200"
         >
           <div class="relative rounded-xl">
-            <div class="absolute inset-y-0 right-0 w-1/15 bg-gradient-to-l from-black to-transparent"></div>
-            <div class="absolute inset-x-0 top-0 h-1/15 bg-gradient-to-b from-black to-transparent"></div>
+            <div class="absolute inset-y-0 right-0 w-1/18 bg-gradient-to-l from-black to-transparent"></div>
+            <div class="absolute inset-x-0 top-0 h-1/18 bg-gradient-to-b from-black to-transparent"></div>
             <img
               src="/assets/dani-soler-2.jpeg"
               alt="Dani Soler"
               class="object-cover bg-position-bottom object-bottom rounded-3xl"
             />
-            <div class="absolute inset-y-0 left-0 w-1/15 bg-gradient-to-r from-black to-transparent"></div>
-            <div class="absolute inset-x-0 bottom-0 h-1/15 bg-gradient-to-t from-black to-transparent"></div>
+            <div class="absolute inset-y-0 left-0 w-1/18 bg-gradient-to-r from-black to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 h-1/18 bg-gradient-to-t from-black to-transparent"></div>
           </div>
         </div>
   

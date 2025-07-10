@@ -5,6 +5,7 @@
   <LandingPageInit></LandingPageInit>
   
   <QuiSocComponent></QuiSocComponent>
+  <MyStack></MyStack>
 </div>
 </div>
 
@@ -14,6 +15,7 @@
   import LandingPageInit from './components/LandingPageInit.vue';
 import SideBar from './components/SideBar.vue';
 import QuiSocComponent from './components/QuiSocComponent.vue';
+import MyStack from './components/MyStack.vue';
 
   export default {
     data() {
@@ -31,7 +33,8 @@ import QuiSocComponent from './components/QuiSocComponent.vue';
       components: {
         LandingPageInit,
         SideBar,
-        QuiSocComponent
+        QuiSocComponent,
+        MyStack
       }
   }
   

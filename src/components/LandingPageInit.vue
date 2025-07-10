@@ -14,13 +14,13 @@
             diferents entorns de bases de dades com <strong class="text-white">PostGreSQL</strong> o <strong class="text-yellow-100">MySQL</strong>
             </p>
             <div class="flex space-x-4 mt-5">
-            <a href="https://github.com/danielsoler" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/dasolerfo" target="_blank" rel="noopener noreferrer">
               <img src="/assets/github-mark/github-mark-white.svg" alt="GitHub" class="w-10 h-10">
             </a>
-            <a href="https://www.linkedin.com/in/danielsoler/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/daniel-soler-fontanet" target="_blank" rel="noopener noreferrer">
               <img src="/assets/linkedin.svg" alt="LinkedIn" class="w-10 h-10 filter invert">
             </a>
-            <a href="https://www.instagram.com/danielsoler/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/danii_soler13" target="_blank" rel="noopener noreferrer">
               <img src="/assets/instagram-white-icon.svg" alt="Instagram" class="w-10 h-10">
             </a>
            
@@ -43,8 +43,10 @@
         </div>
   
       </div>
-
+      <div class="relative h-1/15 bg-gradient-to-t from-green-900  to-transparent"></div>
     </div>
+    
+
   </template>
   
   <style scoped>
