@@ -10,15 +10,31 @@
       <div class=" box-border w-full p-15">
         <!-- Contenidor lateral -->
           <div id="stack" class="relative text-white text-2xl mt-10 flex max-w-7xl m-auto bg-gray-700 rounded-lg text-center ">
-            <p class="p-3 rounded-lg w-full"> FRONTEND</p>
-            <p class="p-3 rounded-lg  w-full">BACKEND</p>
-            <p class="p-3 rounded-lg  w-full">DEVOPS</p>
-            <p class="p-3 rounded-lg  w-full">DATA BASES</p>
+            <p
+              class="p-3 rounded-lg w-full"
+              :class="{ 'bg-gray-600': selectedStack === 0 }"
+              @click="changeStack(0)"
+            >FRONTEND</p>
+            <p
+              class="p-3 rounded-lg w-full"
+              :class="{ 'bg-gray-600': selectedStack === 1 }"
+              @click="changeStack(1)"
+            >BACKEND</p>
+            <p
+              class="p-3 rounded-lg w-full"
+              :class="{ 'bg-gray-600': selectedStack === 2 }"
+              @click="changeStack(2)"
+            >DEVOPS</p>
+            <p
+              class="p-3 rounded-lg w-full"
+              :class="{ 'bg-gray-600': selectedStack === 3 }"
+              @click="changeStack(3)"
+            >DATA BASES</p>
 
           </div>
 
           <StackComponent
-          :technologies="tecnologies[3]"
+          :technologies="tecnologies[selectedStack]"
           />
 
       </div>
@@ -74,7 +90,13 @@ export default {
   },
   components: {
     StackComponent
-  }, data() {
+  },
+  methods: {
+    changeStack(index) {
+      this.selectedStack = index;
+    }
+  }
+  , data() {
     const tecnologies = [[
   { name: 'PostgreSQL', icon: 'assets/logos/PostgreSQL.svg', bgcolor: '#336791', textColor: '#ffffff' },
   { name: 'MongoDB', icon: 'assets/logos/MongoDB.svg', bgcolor: '#47A248', textColor: '#ffffff' },
@@ -83,10 +105,10 @@ export default {
   { name: 'SQLite', icon: 'assets/logos/SQLite.svg', bgcolor: '#003B57', textColor: '#ffffff' },
   { name: 'Firebase', icon: 'assets/logos/Firebase.svg', bgcolor: '#FFCA28', textColor: '#000000' }
 ], [
-  { name: 'HTML', icon: 'assets/logos/HTML.svg', bgcolor: '#E34F26', textColor: '#ffffff' },
-  { name: 'CSS', icon: 'assets/logos/CSS.svg', bgcolor: '#1572B6', textColor: '#ffffff' },
+  { name: 'HTML', icon: 'assets/logos/HTML5.svg', bgcolor: '#E34F26', textColor: '#ffffff' },
+  { name: 'CSS', icon: 'assets/logos/CSS3.svg', bgcolor: '#1572B6', textColor: '#ffffff' },
   { name: 'Sass', icon: 'assets/logos/Sass.svg', bgcolor: '#CC6699', textColor: '#ffffff' },
-  { name: 'Tailwind CSS', icon: 'assets/logos/Tailwind_CSS.svg', bgcolor: '#38B2AC', textColor: '#ffffff' },
+  { name: 'Tailwind CSS', icon: 'assets/logos/Tailwind CSS.svg', bgcolor: '#38B2AC', textColor: '#ffffff' },
   { name: 'JavaScript', icon: 'assets/logos/JavaScript.svg', bgcolor: '#F7DF1E', textColor: '#000000' },
   { name: 'TypeScript', icon: 'assets/logos/TypeScript.svg', bgcolor: '#3178C6', textColor: '#ffffff' },
   { name: 'Vue.js', icon: 'assets/logos/Vue.js.svg', bgcolor: '#42B883', textColor: '#35495E' },
@@ -110,9 +132,10 @@ export default {
   { name: 'Gingo', icon: 'assets/logos/gingo.webp', bgcolor: '#00AF9C', textColor: '#ffffff' }
 ]];
 
-    return {tecnologies: tecnologies}
+    return {tecnologies: tecnologies, selectedStack: 0};
   }
   
 };
+
 
 </script>
