@@ -97,14 +97,7 @@ export default {
     }
   }
   , data() {
-    const tecnologies = [[
-  { name: 'PostgreSQL', icon: 'assets/logos/PostgreSQL.svg', bgcolor: '#336791', textColor: '#ffffff' },
-  { name: 'MongoDB', icon: 'assets/logos/MongoDB.svg', bgcolor: '#47A248', textColor: '#ffffff' },
-  { name: 'Redis', icon: 'assets/logos/Redis.svg', bgcolor: '#D82C20', textColor: '#ffffff' },
-  { name: 'MySQL', icon: 'assets/logos/MySQL.svg', bgcolor: '#00758F', textColor: '#ffffff' },
-  { name: 'SQLite', icon: 'assets/logos/SQLite.svg', bgcolor: '#003B57', textColor: '#ffffff' },
-  { name: 'Firebase', icon: 'assets/logos/Firebase.svg', bgcolor: '#FFCA28', textColor: '#000000' }
-], [
+    const tecnologies = [ [
   { name: 'HTML', icon: 'assets/logos/HTML5.svg', bgcolor: '#E34F26', textColor: '#ffffff' },
   { name: 'CSS', icon: 'assets/logos/CSS3.svg', bgcolor: '#1572B6', textColor: '#ffffff' },
   { name: 'Sass', icon: 'assets/logos/Sass.svg', bgcolor: '#CC6699', textColor: '#ffffff' },
@@ -113,6 +106,15 @@ export default {
   { name: 'TypeScript', icon: 'assets/logos/TypeScript.svg', bgcolor: '#3178C6', textColor: '#ffffff' },
   { name: 'Vue.js', icon: 'assets/logos/Vue.js.svg', bgcolor: '#42B883', textColor: '#35495E' },
   { name: 'React', icon: 'assets/logos/React.svg', bgcolor: '#20232A', textColor: '#61DAFB' }
+],[
+  { name: 'Go', icon: 'assets/logos/Go.svg', bgcolor: '#00ADD8', textColor: '#ffffff' },
+  { name: 'Python', icon: 'assets/logos/Python.svg', bgcolor: '#3776AB', textColor: '#FFD43B' },
+  { name: 'Java', icon: 'assets/logos/Java.svg', bgcolor: '#007396', textColor: '#ffffff' },
+  { name: 'C#', icon: 'assets/logos/CSharp.svg', bgcolor: '#68217A', textColor: '#ffffff' },
+  { name: 'PHP', icon: 'assets/logos/PHP.svg', bgcolor: '#8892BF', textColor: '#ffffff' },
+  { name: 'Laravel', icon: 'assets/logos/Laravel.svg', bgcolor: '#FF2D20', textColor: '#ffffff' },
+  { name: 'CodeIgniter', icon: 'assets/logos/CodeIgniter.svg', bgcolor: '#EE4623', textColor: '#ffffff' },
+  { name: 'Gingo', icon: 'assets/logos/gingo.webp', bgcolor: '#00AF9C', textColor: '#ffffff' }
 ], [
   { name: 'Docker', icon: 'assets/logos/Docker.svg', bgcolor: '#0db7ed', textColor: '#ffffff' },
   { name: 'Kubernetes', icon: 'assets/logos/Kubernetes.svg', bgcolor: '#326CE5', textColor: '#ffffff' },
@@ -122,14 +124,12 @@ export default {
   { name: 'Postman', icon: 'assets/logos/Postman.svg', bgcolor: '#FF6C37', textColor: '#ffffff' },
   
 ], [
-  { name: 'Go', icon: 'assets/logos/Go.svg', bgcolor: '#00ADD8', textColor: '#ffffff' },
-  { name: 'Python', icon: 'assets/logos/Python.svg', bgcolor: '#3776AB', textColor: '#FFD43B' },
-  { name: 'Java', icon: 'assets/logos/Java.svg', bgcolor: '#007396', textColor: '#ffffff' },
-  { name: 'C#', icon: 'assets/logos/CSharp.svg', bgcolor: '#68217A', textColor: '#ffffff' },
-  { name: 'PHP', icon: 'assets/logos/PHP.svg', bgcolor: '#8892BF', textColor: '#ffffff' },
-  { name: 'Laravel', icon: 'assets/logos/Laravel.svg', bgcolor: '#FF2D20', textColor: '#ffffff' },
-  { name: 'CodeIgniter', icon: 'assets/logos/CodeIgniter.svg', bgcolor: '#EE4623', textColor: '#ffffff' },
-  { name: 'Gingo', icon: 'assets/logos/gingo.webp', bgcolor: '#00AF9C', textColor: '#ffffff' }
+  { name: 'PostgreSQL', icon: 'assets/logos/Postgres.svg', bgcolor: '#336791', textColor: '#ffffff' },
+  { name: 'MongoDB', icon: 'assets/logos/MongoDB.svg', bgcolor: '#47A248', textColor: '#ffffff' },
+  { name: 'Redis', icon: 'assets/logos/Redis.svg', bgcolor: '#D82C20', textColor: '#ffffff' },
+  { name: 'MySQL', icon: 'assets/logos/MySQL.svg', bgcolor: '#00758F', textColor: '#ffffff' },
+  { name: 'SQLite', icon: 'assets/logos/SQLite.svg', bgcolor: '#003B57', textColor: '#ffffff' },
+  { name: 'Firebase', icon: 'assets/logos/Firebase.svg', bgcolor: '#FFCA28', textColor: '#000000' }
 ]];
 
     return {tecnologies: tecnologies, selectedStack: 0};
