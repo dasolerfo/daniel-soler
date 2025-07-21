@@ -53,7 +53,7 @@
             </p>
             <a
               href="/projectes"
-              class="text-green-400 hover:text-green-300 transition duration-300 ease-in-out"
+              class="text-green-400 hover:text-green-300 transition duration-300 ease-in-out "
             >
               <strong class="text-3xl">Llegir Article</strong>
             </a>
@@ -71,10 +71,23 @@
           const observer = new IntersectionObserver(
             ([entry]) => {
               if (entry.isIntersecting) {
-                el.classList.remove('opacity-0', 'translate-y-10')
+                el.classList.remove('opacity-0', 'translate-y-10', '-translate-y-10')
                 //observer.unobserve(el)
               } else {
-                el.classList.add('opacity-0', 'translate-y-10')
+                // Detect scroll direction
+                const currentScroll = window.scrollY
+                el._lastScroll = el._lastScroll || 0
+                const goingDown = currentScroll > el._lastScroll
+                el._lastScroll = currentScroll
+
+                if (!goingDown) {
+                  el.classList.add('translate-y-10')
+                  el.classList.remove('-translate-y-10')
+                } else {
+                  el.classList.add('-translate-y-10')
+                  el.classList.remove('translate-y-10')
+                }
+                el.classList.add('opacity-0')
               }
             },
             {
