@@ -11,7 +11,7 @@
 
 </template>
 
-<script> 
+<script lang="ts"> 
   import LandingPageInit from './components/LandingPageInit.vue';
 import SideBar from './components/SideBar.vue';
 import QuiSocComponent from './components/QuiSocComponent.vue';

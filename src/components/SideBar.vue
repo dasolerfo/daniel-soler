@@ -22,7 +22,7 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
 
 import { isMemoSame, ref } from 'vue';
 export default {

@@ -3,11 +3,11 @@
       <!-- Side panel -->
       <div  class="w-1/3  text-white p-5 flex flex-col justify-center">
         <Transition name="fade-up">
-        <div v-if="show" class="flex flex-col space-y-4 m-10 justify-center">
-          <h1 class="text-7xl font-bold mb-4">Daniel Soler</h1>
+        <div v-if="show" class="flex flex-col space-y-4 ml-10 mr-5 justify-center">
+          <h1 class="text-6xl font-bold mb-4">Daniel Soler</h1>
           <h2 class="text-3xl font-bold mb-4">Desenvolupador Fullstack</h2>
           <h2 class="text-3xl font-bold mb-4">Enginyer informàtic</h2>
-          <p class="text-gray-400 mb-6 text-xl mt-5">
+          <p class="text-gray-400 mb-6 text-l mt-5">
             <span class="text-white">Desenvolupador Fullstack</span> amb experiència en llenguatges com
             <strong class="text-cyan-400">Go</strong> i <strong class="text-red-400">PHP Laravel</strong> per el desenvolupament d'aplicacions backend,
             <strong class="text-green-400">Vue.js</strong> i <strong class="text-cyan-500">React</strong> per el frontend d'aplicacions web, amb experiencia amb 
@@ -65,7 +65,7 @@
   }
   </style>
   
-  <script >
+  <script lang="ts">
 
 
 
