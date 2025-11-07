@@ -22,30 +22,27 @@
         v-intersect
         class="text-6xl font-bold mb-8 text-green-400 opacity-0 translate-y-10 transition duration-700 ease-out"
       >
-        Una mica sobre mi
+        {{ $t('message.aboutme') }}
       </h2>
 
       <p
         v-intersect
         class="text-gray-300 mb-8 text-lg leading-relaxed opacity-0 translate-y-10 transition duration-700 ease-out delay-200"
       >
-        <strong class="text-white">Hola món!</strong> Sóc el Dani, un apassionat de la programació i futur enginyer informàtic :) 
+        <strong class="text-white">Hello world!</strong> {{ $t('message.me1') }}
         <br /><br />
-        Sóc un noi de 22 anys de Badalona, que des de ben petit ha mostrat un gran interès per la tecnologia, 
-        tot i que tinc altres hobbies com l’esport, la cuina o la música. 
+        {{ $t('message.me2') }}
         <br /><br />
-        M’agraden les coses senzilles — tant les birres amb els amics com el tracte humà i empàtic amb la gent. 
-        Crec que les bones relacions personals i laborals sorgeixen d’això.
+       {{ $t('message.me3') }}
         <br /><br />
-        Si vols conèixer-me més professionalment, visita la següent secció del meu portafoli, 
-        on parlo dels meus projectes i experiències.
+        {{ $t('message.me4') }}
       </p>
 
       <a
         href="/projectes"
         class="text-green-400 hover:text-green-300 transition duration-300 ease-in-out text-2xl font-semibold"
       >
-        Llegir Article →
+        {{ $t('message.readArticle') }}
       </a>
     </div>
   </div>

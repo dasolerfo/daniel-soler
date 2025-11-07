@@ -5,13 +5,12 @@
         <Transition name="fade-up">
         <div v-if="show" class="flex flex-col space-y-4 ml-10 mr-5 justify-center">
           <h1 class="text-6xl font-bold mb-4">Daniel Soler</h1>
-          <h2 class="text-3xl font-bold mb-4">Desenvolupador Fullstack</h2>
-          <h2 class="text-3xl font-bold mb-4">Enginyer informàtic</h2>
+          <h2 class="text-3xl font-bold mb-4">{{ $t('message.fullstackdev') }}</h2>
+          <h2 class="text-3xl font-bold mb-4">{{ $t('message.enginyerInfo') }}</h2>
           <p class="text-gray-400 mb-6 text-l mt-5">
-            <span class="text-white">Desenvolupador Fullstack</span> amb experiència en llenguatges com
-            <strong class="text-cyan-400">Go</strong> i <strong class="text-red-400">PHP Laravel</strong> per el desenvolupament d'aplicacions backend,
-            <strong class="text-green-400">Vue.js</strong> i <strong class="text-cyan-500">React</strong> per el frontend d'aplicacions web, amb experiencia amb 
-            diferents entorns de bases de dades com <strong class="text-white">PostGreSQL</strong> o <strong class="text-yellow-100">MySQL</strong>
+            <span class="text-white">{{ $t('message.fullstackdev') }}</span> {{ $t('message.intro1') }}
+            <strong class="text-cyan-400">Go</strong> {{ $t('message.and') }} <strong class="text-red-400">PHP Laravel</strong> {{ $t('message.intro2') }}
+            <strong class="text-green-400">Vue.js</strong> {{ $t('message.and') }} <strong class="text-cyan-500">React</strong> {{ $t('message.intro3') }} <strong class="text-white">PostGreSQL</strong> {{ $t('message.or') }} <strong class="text-yellow-100">MySQL</strong>
             </p>
             <div class="flex space-x-4 mt-5">
             <a href="https://github.com/dasolerfo" target="_blank" rel="noopener noreferrer">

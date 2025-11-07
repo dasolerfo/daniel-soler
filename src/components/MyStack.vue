@@ -3,7 +3,7 @@
       <h2
         v-intersect
         class="text-7xl font-bold text-white text-left ml-40  mt-2 translate-y-10 transition duration-700 ease-out">
-        El meu Stack
+       {{ $t('message.myStack') }}
       </h2>
 
       <div class=" box-border pl-30 pr-30 w-full mt-18">
