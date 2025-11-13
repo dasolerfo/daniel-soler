@@ -1,0 +1,19 @@
+{
+    "message": {
+        "fullstackdev": "Desenvolupador Fullstack",
+        "enginyerInfo": "Enginyer informàtic",
+        "intro1": "amb experiència en llenguatges com ",
+        "and": " i ",
+        "intro2": " per al desenvolupament d'aplicacions backend, ",
+        "intro3": " per al frontend d'aplicacions web, amb experiència amb diferents entorns de bases de dades com ",
+        "or": " o ",
+        "aboutme": "Una mica sobre mi",
+        "me1": "Sóc el Dani, un apassionat de la programació i futur enginyer informàtic :)",
+        "me2": "Sóc un noi de 22 anys de Badalona, que des de ben petit ha mostrat un gran interès per la tecnologia, tot i que tinc altres hobbies com l’esport, la cuina o la música.",
+        "me3": "M’agraden les coses senzilles — tant les birres amb els amics com el tracte humà i empàtic amb la gent. Crec que les bones relacions personals i laborals sorgeixen d’això.",
+        "me4": "Si vols conèixer-me més professionalment, visita la següent secció del meu portafoli, on parlo dels meus projectes i experiències.",
+        "readArticle": "Llegeix l'article",
+        "myStack": "El meu Stack",
+        "contactMe": "Contacta amb mi"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "message": {
+        "fullstackdev": "Fullstack Developer",
+        "enginyerInfo": "Computer Engineer",
+        "intro1": "with experience in languages such as ",
+        "and": " and ",
+        "intro2": " for backend application development, ",
+        "intro3": " for web frontend development, with experience in different database environments such as ",
+        "or": " or ",
+        "aboutme": "A bit about me",
+        "me1": "I'm Dani, a passionate programmer and future computer engineer :)",
+        "me2": "I'm a 22-year-old from Badalona who has always been fascinated by technology, although I also enjoy sports, cooking, and music.",
+        "me3": "I like simple things — from having beers with friends to honest and empathetic relationships. I believe good personal and professional relationships come from that.",
+        "me4": "If you want to know me better professionally, check out the next section of my portfolio, where I talk about my projects and experiences.",
+        "readArticle": "Read article",
+        "myStack": "My Stack",
+        "contactMe": "Contact me"
+    }
+}
